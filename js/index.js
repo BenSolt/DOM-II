@@ -42,7 +42,7 @@ const logo = document.querySelector('.logo-heading');
 
 
 
-//header change color
+//4.header change color
 
 const navig = document.querySelector('.nav-container ');
 navig.addEventListener('dblclick', (e) => {
@@ -50,40 +50,6 @@ navig.addEventListener('dblclick', (e) => {
    
   })
    
-
- //4. Mouse Dub Click turns blue.
-
- const navbar2 = document.querySelectorAll('.nav .nav-link');
- navbar2.forEach(anchor2 => { 
-  anchor2.addEventListener('click' , (e) =>{
-  e.preventDefault();
-  anchor2.style.color = 'blue'
-  })
-   anchor2.addEventListener('dblclick', (e) => {
-    e.stopPropagation();
-    
-    anchor2.style.backgroundColor = 'orange'
-  })
-    
-}); 
-
-
-  
-
-
-   
-//Mouse Over and Mouse Leave Nav Bar
-
-const navbar = document.querySelectorAll('.nav .nav-link');
- navbar.forEach(anchor => {
-   anchor.addEventListener('mouseover', (e) => {
-    anchor.style.color = 'red'})
-    
-   
-     anchor.addEventListener('mouseleave', (e) => {
-    anchor.style.color = 'black'})
-     }); 
-    
 
 
 
@@ -98,10 +64,6 @@ const navbar = document.querySelectorAll('.nav .nav-link');
 
 
 
-
-
-
-
 //6. Wheel
 
 const wheel = document.querySelector('p');
@@ -110,16 +72,10 @@ const wheel = document.querySelector('p');
      });
 
 
-//7. focus
-
-// const focus = document.querySelector('a');
-//      focus.addEventListener('focus' , (e) => {
-//         e.target.style.fontSize = "35px";
-//      });
 
 
 
-//8. mouseout
+//7. mouseout
 
  const mouseout = document.querySelector('.img-content img');
  mouseout.addEventListener('mouseout' , (e) => {
@@ -127,7 +83,7 @@ const wheel = document.querySelector('p');
       });
 
 
-//9. Key up
+//8. Key up
 
 
      const drag = document.querySelector('.home .intro img');
@@ -135,7 +91,7 @@ const wheel = document.querySelector('p');
     alert("mouse up over photo bus!");  
   }); 
 
-//10. select
+//9. select
 
 const mousemove = document.querySelector('.home .inverse-content');
    mousemove.addEventListener('mousemove', (e) => {
@@ -144,7 +100,12 @@ const mousemove = document.querySelector('.home .inverse-content');
 
 
 
+//10. Scroll
 
+const mousemove = document.querySelector('.home .inverse-content');
+   mousemove.addEventListener('mousemove', (e) => {
+    alert("mouse move!");  
+  }); 
 
 
 
