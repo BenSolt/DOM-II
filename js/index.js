@@ -91,7 +91,7 @@ const wheel = document.querySelector('p');
     alert("mouse up over photo bus!");  
   }); 
 
-//9. select
+//9. mousemove
 
 const mousemove = document.querySelector('.home .inverse-content');
    mousemove.addEventListener('mousemove', (e) => {
@@ -100,11 +100,11 @@ const mousemove = document.querySelector('.home .inverse-content');
 
 
 
-//10. Scroll
+//10. KeyUp
 
-const mousemove = document.querySelector('.home .inverse-content');
-   mousemove.addEventListener('mousemove', (e) => {
-    alert("mouse move!");  
+const keyup = document.querySelector('body');
+  keyup.addEventListener('keyup', (e) => {
+    body.style.backgroundColor = 'white'
   }); 
 
 
